@@ -15,6 +15,14 @@ let inputString = "Hi";
 
 Expected Output:
 sumCodePoints: 177 // 'H' = 72, 'i' = 105, 72 + 105 = 177
+//Excercise 1
+
+let inputString = "Hi";
+let firstCode = inputString.charCodeAt(0);
+let secondCode = inputString.charCodeAt(2);
+let sumCodePoints = firstCode + secondCode;
+
+console.log("The sum code points are:", sumCodePoints);
 
 Exercise 2: Generate a String from Two Code Points
 Objective: Take two numeric Unicode code points,
@@ -28,6 +36,12 @@ Combine the two characters into a single string and assign it to a variable name
 Input:
 let codePoint1 = 65;
 let codePoint2 = 66;
+String.fromCharCode(65);
+String.fromCharCode(66);
+let char1 = String.fromCharCode(codePoint1);
+let char2 = String.fromCharCode(codePoint2);
+let combinedString = char1 + char2;
+console.log ("The combined string is:", combinedString);
 
 Expected Output:
 combinedString: "AB" // 65 = 'A', 66 = 'B', combined = "AB"
@@ -45,8 +59,15 @@ let inputString = "Cat";
 let index1 = 0;
 let index2 = 2;
 
+let code1 = inputString.charCodeAt(index1);
+let code2 = inputString.charCodeAt(index2);
+
+let codePointDifference = Math.abs(code1 - code2);
+console.log("The code point difference is:", codePointDifference);
+
+
 Expected Output:
-codePointDifference: 16 // 'C' = 67, 't' = 116, |67 - 116| = 16
+codePointDifference: 16 // 'C' = 67, 't' = 116, |67 - 116| = 16 ***not the 67 - 116 is not 16.
 
 
 
@@ -94,6 +115,7 @@ thirdCodePoint = inputString1.charCodeAt(2);
 
 // Task 2
 let wordFromCodePoints = String.fromCharCode(72,101,108,108);
+console.log(wordFromCodePoints);
 
 
 // Task 3
